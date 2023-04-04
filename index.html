@@ -7,6 +7,17 @@
         <meta name="keywords" content="the Moon, conspiracy">
         <link rel="icon" href="img/favicon.ico" type="image/x-icon">
         <link rel="stylesheet" href="index.css" type="text/css">
+        <script src="index.js" defer></script>
+        <style>
+            /* style for header image */
+            img#logo {
+
+            padding-top: 4px;
+            padding-left: 12px;
+            float: left;
+            height: 65px;
+            }
+        </style>
     </head>
     <body>
         <header>
@@ -14,25 +25,45 @@
             <h1>The Moon Conspiracy</h1>
         </header>
         <main>
-            <section>
-                <img id="left" src="img/artificial.jpg" width="135px">
+            <section id="left">
+                <img src="img/artificial.jpg" alt="The Moon is artificial" width="135px">
                 <h2>A creation of Aliens?</h2>
                 <p>One popular conspiracy theory about the Moon is that it is not a natural celestial body, but instead an artificial construct created by an advanced extraterrestrial civilization. According to this theory, the Moon was brought to our solar system and placed in orbit around Earth by these aliens for unknown reasons.</p>
+            </section>
+            <section id="center">
                 <h3>A coincidence?</h3>
                 <p>Proponents of this theory argue that the Moon's size, shape, and composition are too perfect to be a naturally occurring satellite. They claim that the Moon's precise position and gravitational pull are necessary to sustain life on Earth, and that its presence is part of a larger plan by these extraterrestrial beings to manipulate and control our planet.</p>
-                <img id="right" src="img/apollo.webp" width="125px">
+            </section>
+            <section id="right">
+                <img id="right" src="img/apollo.webp" alt="Falsified Moon landings by NASA" width="125px">
                 <h4>A coverup?</h4>
                 <p>Some also believe that the Apollo moon landings were faked, and that NASA was involved in a massive cover-up to conceal the true nature of the Moon. They argue that the agency knew all along that the Moon was artificial and did not want to risk revealing this truth to the public.</p>
-                <img id="left" src="img/aliens.webp" width="125px">
+            </section>
+            <section id="left">
+                <img id="left" src="img/aliens.webp" alt="Aliens on the Moon" width="125px">
                 <h5>Aliens on the Moon?</h5>
                 <p>Others believe that the Moon is actually a base for these aliens, and that they continue to monitor and influence our planet from their hidden outpost. They point to various sightings of strange lights and objects on the Moon as evidence of this ongoing activity.</p>
-                <img id="right" src="img/moon.webp" width="125px">
+            </section>
+            <section id="right">
+                <img id="right" src="img/moon.webp" alt="The Dark Side of the Moon" width="125px">
                 <h6>The illusive truth</h6>
                 <p>Despite the lack of concrete evidence to support these claims, many people continue to believe in this conspiracy theory and maintain that the true nature of the Moon has yet to be fully revealed.</p>
             </section>
+            <button type="button" onclick="showFirst()">An Inconspicuous Button</button>
+            <div id="firstLayer">
+                <p>WARNING! You are entering dangerous territory! If you care about your safety and well being, DO NOT CLICK THE NEXT BUTTON!</p>
+                <button type="button" onclick="showSecond()">Delve in Deeper</button>
+                <div id="secondLayer">
+                    <p>This is your FINAL WARNING! Turn back NOW before it's too late!</p>
+                    <button type="button" onclick="showThird()">Reveal the Truth</button>
+                    <div id="thirdLayer">
+                        <iframe width="640" height="360" id="rickRoll" src=""></iframe>
+                    </div>
+                </div>
+            </div>
         </main>
         <footer>
-            <p>&copy;&nbsp;2023 Andrew Lin</p>
+            <p>&copy;&nbsp;2023 Andrew Lin. Text provided by <a href="https://chat.openai.com/">ChatGPT</a></p>
         </footer>
     </body>
 </html>

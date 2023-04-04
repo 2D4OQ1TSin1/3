@@ -1,14 +1,13 @@
-/* Lab 9 - Styling */
+/* Assignment 3 - Styling */
 
 /* style for the html element */
-
 html {
     background-color: #647382;
 }
 
 /* style for body element */
 body {
-    width: 50%;
+    width: 75%;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -22,15 +21,6 @@ header {
     padding-top: 4px;
     background-image: linear-gradient(45deg, darkgray, #5B6876, #47515C);
     border-bottom-style: solid;
-}
-
-/* style for header image */
-img#logo {
-
-    padding-top: 4px;
-    padding-left: 12px;
-    float: left;
-    height: 65px;
 }
 
 /* style for h1 */
@@ -49,6 +39,7 @@ main {
     background-image: radial-gradient(#47515C, #5B6876, darkgray);
 }
 
+/* style for the other remaining headers */
 h2, h3, h4, h5, h6 {
     color: white;
     text-shadow: 2px 2px 2px black;
@@ -57,14 +48,7 @@ h2, h3, h4, h5, h6 {
     margin-bottom: 16px;
 }
 
-h3 {
-    text-align: center;
-}
-
-h4, h6 {
-    text-align: right;
-}
-
+/* style for p in main */
 main p {
     color: white;
     text-shadow: 2px 2px 2px black;
@@ -72,16 +56,65 @@ main p {
     margin-top: 0px;
 }
 
-main img#left {
+/* these two styles are responsible for floating the images to their respective direction */
+main section#left img {
     float: left;
     padding-right: 16px;
     padding-bottom: 16px;
 }
 
-main img#right {
+main section#right img {
     float: right;
     padding-left: 16px;
+    padding-bottom: 16px;
+}
 
+/* style for centerizing sections in main */
+main section#center {
+    text-align: center;
+}
+
+/* style for aligning sections to the right in main */
+main section#right {
+    text-align: right;
+}
+
+/* style for buttons */
+button {
+    background-color: #647382;
+    border: 2px solid #47515C;
+    color: lightgrey;
+}
+
+button:hover {
+    background-color: grey;
+}
+
+button:active {
+    background-color: lightgrey;
+    border: 2px solid #647382;
+    color: #47515C;
+}
+
+/* hides the divs */
+div#firstLayer, div#secondLayer, div#thirdLayer {
+    display: none;
+}
+
+/* style for the p in divs */
+div p {
+    margin-top: 6px;
+    margin-bottom: 12px;
+}
+
+/* style for the video */
+iframe {
+    display: block;
+    margin-top: 16px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px solid #5B6876;
+    box-shadow: 6px 6px #47515C;
 }
 
 /* style for footer */
@@ -98,4 +131,22 @@ footer p {
     font-size: small;
     color: white;
     text-shadow: 2px 2px 2px black;
+}
+
+/* style for the link in the footer */
+footer p a:link {
+    text-decoration: none;
+    color: grey;
+}
+
+footer p a:visited {
+    color: #647382
+}
+
+footer p a:hover {
+    color: lightgrey;
+}
+
+footer p a:active {
+    color: white;
 }
